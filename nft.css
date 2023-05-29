@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 350px;
+}
+.card {
+  margin: 2rem 1rem;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+}
+img {
+  max-width: 100%;
+}
+.equilibrium-img {
+  position: relative;
+}
+
+.equilibrium-img img {
+  border-radius: 0.5rem;
+}
+
+.equilibrium-img div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 40%);
+  height: calc(100% - 4px);
+  width: 100%;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.equilibrium-img div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.equilibrium-img div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+box-text {
+  margin: 10px 0;
+}
+.box-text a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+.box-text p {
+  color: hsl(215, 32%, 27%);
+  font-weight: 400;
+  margin-top: 15px;
+}
+.box-text a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.content {
+  margin-top: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex .eth {
+  color: hsl(178, 100%, 50%);
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex .eth img {
+  margin-right: 5px;
+}
+.flex .eth-1 img {
+  margin-right: 5px;
+}
+
+.flex .eth-1 {
+  color: hsl(215, 32%, 27%);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding: 10px 0;
+}
+.author img {
+  max-width: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.author p {
+  color: hsl(215, 32%, 27%);
+  font-weight: 600;
+  font-size: 15px;
+}
+.author p a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+.author p a:hover {
+  color: hsl(178, 100%, 50%);
+}
